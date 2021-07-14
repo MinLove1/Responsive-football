@@ -1,0 +1,331 @@
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header section style */
+
+header {
+  background: #2d25a0;
+  width: 100%;
+  height: 677px;
+}
+
+.home {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  padding-top: 90px;
+}
+
+.home-details {
+}
+
+.home-title {
+  width: 485px;
+}
+
+.home-title h2 {
+  font-weight: 700px;
+  font-size: 64px;
+  color: #ffffff;
+}
+
+.home-title h2:hover {
+  color: hotpink;
+}
+
+.watch-live {
+  width: 168px;
+
+  background: #e02c6d;
+  border-radius: 15px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.watch-live:hover {
+  background: darkgreen;
+  color: #ffffff;
+  transition: 1.5s;
+}
+
+.watch-live a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.watch-live i {
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.home-img {
+  width: 556px;
+  height: 438px;
+  margin-left: 40px;
+}
+
+.home-img img {
+  width: 100%;
+}
+
+/* player section */
+
+.container {
+  width: 1050px;
+
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+.container2 {
+  width: 1050px;
+
+  margin: 0 auto;
+  padding: 40px 0px;
+}
+
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.player {
+  width: 300px;
+  height: 440px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 5px 5px 40px;
+}
+
+.player:hover {
+  transform: scale(1.1);
+  transition: 1.3s;
+}
+
+.player-banner img {
+  width: 100%;
+}
+
+.player-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.player-info p {
+  font-size: 16px;
+  color: #6c6c6c;
+  line-height: 26px;
+}
+
+/* Top scorer */
+
+.Top-players {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.player1 {
+  width: 450px;
+  height: 395px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.player1:hover .photo-detail {
+  display: block;
+  background-color: rgba(105, 105, 105, 0.459);
+  color: #ffffff;
+}
+
+.player1 .photo img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.photo-detail {
+  position: absolute;
+  width: 450px;
+  top: 0;
+  display: none;
+}
+
+.photo-detail h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: mediumvioletred;
+}
+
+/* top scorer ends */
+
+/* login forms start */
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form h1 {
+  font-size: 30px;
+  color: #6c6c6c;
+}
+
+.registration-form input,
+button {
+  font-size: 1.4em;
+  border: 1px solid silver;
+  margin-top: 16px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.login-btn {
+  background: mediumvioletred;
+  color: white;
+}
+
+/* login form end */
+
+/* Footers sections start */
+
+.footer {
+  width: 485px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 100%;
+  opacity: 0.5;
+}
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons i {
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  color: #969bab;
+  padding: 0 7px;
+}
+
+.social-icons i:hover {
+  color: deeppink;
+}
+
+.copyright p {
+  text-align: center;
+}
+
+.copyright p {
+  text-align: center;
+  font-size: 18px;
+  color: #6c6c6c;
+}
+
+/* Media Query */
+
+/* Views for Mobile devices */
+
+@media only screen and (max-width: 688px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-details {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .home-title {
+    width: 100%;
+  }
+
+  .home-title h2 {
+    font-size: 36px;
+  }
+  .home-img {
+    width: 100%;
+  }
+
+  .home-img img {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Views for Tablet */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .home {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .home-details {
+    width: 100%;
+    padding-bottom: 30px;
+    margin-left: 30px;
+  }
+
+  .home-title {
+    width: 100%;
+  }
+
+  .home-title h2 {
+    font-size: 30px;
+  }
+  .home-img {
+    width: 100%;
+  }
+
+  .home-img img {
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 25px;
+  }
+
+  .Top-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
