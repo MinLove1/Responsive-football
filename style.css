@@ -1,6 +1,10 @@
 /* Fonts */
 
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+
+/* Global section */
 
 body {
   font-family: "Poppins", sans-serif;
@@ -99,6 +103,7 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+  /* background:#6c6c6cb7; */
 }
 
 .player {
@@ -203,6 +208,10 @@ button {
   color: white;
 }
 
+.login-btn:hover{
+  background:green;
+  color:white;
+}
 /* login form end */
 
 /* Footers sections start */
@@ -289,7 +298,7 @@ button {
 
 /* Views for Tablet */
 
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+/* @media only screen and (min-width: 688px) and (max-width: 992px) {
   .home {
     flex-direction: column;
     align-items: center;
@@ -328,4 +337,4 @@ button {
   .Top-players {
     grid-template-columns: repeat(1, 1fr);
   }
-}
+} */
